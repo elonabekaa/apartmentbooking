@@ -1,18 +1,3 @@
-
-
-Detect language
-
-English
-
-Albanian
-
-Spanish
-
-Albanian
-
-English
-
-Spanish
 # Rezervimi i Apartamenteve
 
 ## përshkrim
