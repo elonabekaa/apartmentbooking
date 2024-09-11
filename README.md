@@ -1,6 +1,6 @@
 # Reservation of Apartments
 
-## description
+## Description
 
 **Apartment Booking** is an online system for booking apartments in Pristina. This project to facilitate the management of apartments, reserving a special interface for administrators.
 
