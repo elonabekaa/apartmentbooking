@@ -1,0 +1,87 @@
+<div class="sidebar">
+  <a href="dashboard" class="menu-link">
+    <span class="material-icons-sharp">dashboard</span>
+    <h3>Dashboard</h3>
+  </a>
+  <div class="menu-item">
+    <a href="/users" class="menu-link">
+      <span class="material-icons-sharp">people</span>
+      <h3>Users</h3>
+    </a>
+    <nav class="sb-sidenav-menu-nested nav submenu">
+      <a class="nav-link" href="/users/create">Add Users</a>
+    </nav>
+  </div>
+  <div class="menu-item">
+    <a href="/bookings" class="menu-link">
+      <span class="material-icons-sharp">event_note</span>
+      <h3>Booking</h3>
+    </a>
+    <nav class="sb-sidenav-menu-nested nav submenu">
+      <a class="nav-link" href="/bookings/create">Add Booking</a>
+    </nav>
+  </div>
+  <div class="menu-item">
+    <a href="/apartments" class="menu-link">
+      <span class="material-icons-sharp">apartment</span>
+      <h3>Apartments</h3>
+    </a>
+    <nav class="sb-sidenav-menu-nested nav submenu">
+      <a class="nav-link" href="/apartments/create">Add Apartments</a>
+    </nav>
+  </div>
+  <div class="menu-item">
+    <a href="/payments" class="menu-link">
+      <span class="material-icons-sharp">credit_card</span>
+      <h3>Payments</h3>
+    </a>
+    <nav class="sb-sidenav-menu-nested nav submenu">
+      <a class="nav-link" href="/payments/create">Add Payments</a>
+    </nav>
+  </div>
+  <div class="menu-item">
+    <a href="/reviews" class="menu-link">
+      <span class="material-icons-sharp">rate_review</span>
+      <h3>Reviews</h3>
+    </a>
+    <nav class="sb-sidenav-menu-nested nav submenu">
+      <a class="nav-link" href="/reviews/create">Add Reviews</a>
+    </nav>
+  </div>
+  <div class="menu-item">
+    <a href="/amenities" class="menu-link">
+      <span class="material-icons-sharp">check_box</span>
+      <h3>Amenities</h3>
+    </a>
+    <nav class="sb-sidenav-menu-nested nav submenu">
+      <a class="nav-link" href="/amenities/create">Add Amenities</a>
+    </nav>
+  </div>
+
+  <a href="/logout" class="active" id="logoutBtn">
+    <span class="material-icons-sharp">logout</span>
+    <h3>Logout</h3>
+  </a>
+  <a></a>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    document
+      .getElementById("logoutBtn")
+      .addEventListener("click", function (event) {
+        event.preventDefault();
+        Swal.fire({
+          title: "Are you sure?",
+          text: "You want to log out?",
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonColor: "#3085d6",
+          cancelButtonColor: "#d33",
+          confirmButtonText: "Yes, log me out!",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.href = "/logout";
+          }
+        });
+      });
+  </script>
+</div>

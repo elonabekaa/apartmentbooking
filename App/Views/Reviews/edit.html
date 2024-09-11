@@ -1,0 +1,76 @@
+{% extends "layout/appLayout.html" %}
+{% block title %}Edit | Reviews{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="/css/style1.css" />
+<main>
+  <div class="container-fluid">
+    <h1 class="mt-4"></h1>
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="card shadow-lg border-0 rounded-lg mt-5">
+          <div class="card-header">
+            <h3 class="text-center font-weight-light my-2">Edit Review</h3>
+          </div>
+          <div class="card-body">
+            <form method="post" action="/reviews/update">
+              <input type="hidden" name="id" value="{{ review.id }}" />
+              <div class="form-group">
+                <label class="small mb-1">User ID:</label>
+                <input
+                  class="form-control py-4"
+                  name="user_id"
+                  type="text"
+                  value="{{ review.user_id }}"
+                  placeholder="Enter user ID"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="small mb-1">Apartment Name:</label>
+                <select name="apartment_id" class="form-control" required>
+                  <option value="">Zgjedh nje Apartment</option>
+                  {% for apartment in apartments %}
+                    <option value="{{ apartment.id }}"
+                      {% if apartment.id == review.apartment_id %}selected{% endif %}>
+                      {{ apartment.name }}
+                    </option>
+                  {% endfor %}
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="small mb-1">Review Text:</label>
+                <textarea
+                  class="form-control py-4"
+                  name="review_text"
+                  placeholder="Enter review text"
+                  required
+                >{{ review.review_text }}</textarea>
+              </div>
+              <div class="form-group">
+                <label class="small mb-1">Rating:</label>
+                <input
+                  class="form-control py-4"
+                  name="rating"
+                  type="number"
+                  value="{{ review.rating }}"
+                  placeholder="Enter rating (1-5)"
+                  min="1"
+                  max="5"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="btn btn-primary btn-block"
+                  type="submit"
+                  value="Edit Review"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

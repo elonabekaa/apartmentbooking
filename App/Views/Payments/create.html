@@ -1,0 +1,73 @@
+{% extends "layout/appLayout.html" %}
+{% block title %}Create | Payment{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="/css/style1.css" />
+<main>
+  <div class="container-fluid">
+    <h1 class="mt-4">Add Payment</h1>
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="card shadow-lg border-0 rounded-lg mt-5">
+            <div class="card-header">
+              <h3 class="text-center font-weight-light my-2">Add Payment</h3>
+            </div>
+        <div class="card-body">
+          <form method="post" action="/payments/store">
+            <div class="form-group">
+              <label class="small mb-1">Booking ID:</label>
+              <input
+                class="form-control py-4"
+                name="booking_id"
+                type="text"
+                placeholder="Enter booking ID"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="small mb-1">Amount:</label>
+              <input
+                class="form-control py-4"
+                name="amount"
+                type="number"
+                step="0.01"
+                placeholder="Enter amount"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="small mb-1">Payment Method:</label>
+              <select
+                class="form-control py-4"
+                name="payment_method"
+                required
+              >
+                <option value="" disabled selected>Select payment method</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="PayPal">PayPal</option>
+                <option value="Bank Transfer">Bank Transfer</option>
+                <option value="Cash">Cash</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="small mb-1">Payment Date:</label>
+              <input
+                class="form-control py-4"
+                name="payment_date"
+                type="date"
+                placeholder="Enter payment date"
+                required
+              />
+            </div>
+            <input
+              class="btn btn-primary"
+              name="create_payment"
+              value="Submit"
+              type="submit"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

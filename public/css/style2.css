@@ -1,0 +1,51 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1.1em;
+  font-family: "Arial", sans-serif;
+  background-color: #eeeeee; /* Ngjyrë e bardhë që funksionon mirë në të dy modalitetet */
+  color: #000000; /* Ngjyrë gri e errët për tekstin, e lexueshme në të dy modalitetet */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Një hije e lehtë për ndarje */
+}
+
+/* Stili për krye të tabelës */
+table thead tr {
+  background-color: #6c757d; /* Një gri e mesme që duket mirë në të dy modalitetet */
+  color: #ffffff; /* Tekst i bardhë për kontrast të mirë */
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Stili për qelizat e tabelës */
+table th,
+table td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd; /* Një ngjyrë e lehtë gri për vijat e qelizave */
+}
+
+/* Stili për rreshtat e tabelës */
+table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* Stili për rreshtat e alternuar */
+table tbody tr:nth-of-type(even) {
+  background-color: #f8f9fa; /* Një gri e lehtë që duket mirë në të dy modalitetet */
+}
+
+/* Stili për rreshtat kur i vendos miushin sipër */
+table tbody tr:hover {
+  background-color: #e9ecef; /* Një gri më e theksuar për ndërveprim */
+}
+
+/* Stili për lidhjet (Edit, Delete) */
+table a {
+  color: #007bff; /* Një ngjyrë blu që është në kontrast të mirë me të dy sfondet */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+table a:hover {
+  text-decoration: underline;
+}

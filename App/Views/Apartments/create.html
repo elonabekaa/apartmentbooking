@@ -1,0 +1,79 @@
+{% extends "layout/appLayout.html" %}
+{% block title %}Create | Apartment{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="/css/style1.css" />
+<main>
+  <div class="container-fluid">
+    <h1 class="mt-4">Add Apartment</h1>
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="card shadow-lg border-0 rounded-lg mt-5">
+            <div class="card-header">
+              <h3 class="text-center font-weight-light my-2">Add Apartment</h3>
+            </div>
+        <div class="card-body">
+          <form method="post" action="/apartments/store">
+            <div class="form-group">
+              <label class="small mb-1">Apartment Name:</label>
+              <input
+                class="form-control py-4"
+                name="name"
+                type="text"
+                placeholder="Enter apartment name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="small mb-1">Description:</label>
+              <input
+                class="form-control py-4"
+                name="description"
+                type="text"
+                placeholder="Enter description"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="small mb-1">Location:</label>
+              <input
+                class="form-control py-4"
+                name="location"
+                type="text"
+                placeholder="Enter location"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="small mb-1">Price per Night:</label>
+              <input
+                class="form-control py-4"
+                name="price_per_night"
+                type="number"
+                step="0.01"
+                placeholder="Enter price per night"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="small mb-1">Max Guests:</label>
+              <input
+                class="form-control py-4"
+                name="max_guests"
+                type="number"
+                placeholder="Enter max guests"
+                required
+              />
+            </div>
+            <input
+              class="btn btn-primary"
+              name="create_apartment"
+              value="Submit"
+              type="submit"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

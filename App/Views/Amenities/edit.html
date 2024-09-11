@@ -1,0 +1,74 @@
+{% extends "layout/appLayout.html" %} {% block title %}Edit | Amenitie{%
+endblock %} {% block content %}
+<link rel="stylesheet" href="/css/style1.css" />
+<main>
+  <div class="container-fluid">
+    <h1 class="mt-4">Edit Amenitie</h1>
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="card shadow-lg border-0 rounded-lg mt-5">
+          <div class="card-header">
+            <h3 class="text-center font-weight-light my-2">Edit Amenitie</h3>
+          </div>
+          <div class="card-body">
+            <form method="post" action="/amenities/update">
+              <input type="hidden" name="id" value="{{ amenitie.id }}" />
+              <div class="form-group">
+                <label class="small mb-1">Apartment ID:</label>
+                <input
+                  class="form-control py-4"
+                  name="apartment_id"
+                  type="text"
+                  value="{{ amenitie.apartment_id }}"
+                  placeholder="Enter apartment ID"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="small mb-1">Amenity Name:</label>
+                <input
+                  class="form-control py-4"
+                  name="amenity_name"
+                  type="text"
+                  value="{{ amenitie.amenity_name }}"
+                  placeholder="Enter amenity name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="small mb-1">Created At:</label>
+                <input
+                  class="form-control py-4"
+                  name="created_at"
+                  type="date"
+                  value="{{ amenitie.created_at }}"
+                  placeholder="Enter creation date"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="small mb-1">Updated At:</label>
+                <input
+                  class="form-control py-4"
+                  name="updated_at"
+                  type="date"
+                  value="{{ amenitie.updated_at }}"
+                  placeholder="Enter update date"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="btn btn-primary btn-block"
+                  type="submit"
+                  value="Update Amenitie"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

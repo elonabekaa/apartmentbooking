@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booking Apartments</title>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+
+    <!-- Site Metas -->
+    <meta name="keywords" content="booking, apartments, Prishtina" />
+    <meta
+      name="description"
+      content="Find and book the best apartments in Prishtina."
+    />
+    <meta name="author" content="Hostit" />
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="csss/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome style -->
+    <link href="csss/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="csss/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="csss/responsive.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="hero_area">
+      <!-- header section starts -->
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="/">
+              <span>Booking Apartments Prishtina</span>
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login">Login</a>
+                </li>
+              </ul>
+              <div class="quote_btn-container">
+                <form class="form-inline">
+                  <button class="btn nav_search-btn" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+      <!-- slider section -->
+      <section class="slider_section">
+        <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="detail-box">
+                      <h1>
+                        Book Your <br />
+                        Dream Apartment
+                      </h1>
+                      <p>
+                        Discover the best apartments in Prishtina, tailored to
+                        meet all your needs for a comfortable and luxurious
+                        stay.
+                      </p>
+                      <div class="btn-box">
+                        <a href="/" class="btn-1"> View Apartments </a>
+                        <a href="login" class="btn-2">Login</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-lg-10 mx-auto">
+                        <div class="img-box">
+                          <img
+                            src="imagess/apartment-1.webp"
+                            alt="Apartment Image"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="detail-box">
+                      <h1>
+                        Luxury & Comfort <br />
+                        In Every Stay
+                      </h1>
+                      <p>
+                        Enjoy the perfect blend of luxury and comfort in our
+                        hand-picked apartments located in the heart of
+                        Prishtina.
+                      </p>
+                      <div class="btn-box">
+                        <a href="/" class="btn-1"> View Apartments </a>
+                        <a href="login" class="btn-2">Login</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-lg-10 mx-auto">
+                        <div class="img-box">
+                          <img
+                            src="imagess/apartment-3.webp"
+                            alt="Apartment Image"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="detail-box">
+                      <h1>
+                        Affordable Prices <br />
+                        For Everyone
+                      </h1>
+                      <p>
+                        Get the best deals on apartments in Prishtina with
+                        unbeatable prices and unmatched quality.
+                      </p>
+                      <div class="btn-box">
+                        <a href="/" class="btn-1"> View Apartments </a>
+                        <a href="login" class="btn-2">Login</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row">
+                      <div class="col-lg-10 mx-auto">
+                        <div class="img-box">
+                          <img
+                            src="imagess/apartment-3.webp"
+                            alt="Apartment Image"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel_btn-box">
+            <a
+              class="carousel-control-prev"
+              href="#customCarousel1"
+              role="button"
+              data-slide="prev"
+            >
+              <i class="fa fa-angle-left" aria-hidden="true"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#customCarousel1"
+              role="button"
+              data-slide="next"
+            >
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- end slider section -->
+    </div>
+
+    <!-- service section -->
+
+    <section class="service_section layout_padding">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>Shërbimet tona</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="imagess/s5.png" alt="" />
+              </div>
+              <div class="detail-box">
+                <h4>Rezervim i Apartamenteve</h4>
+                <p>
+                  Rezervoni apartamentin tuaj të preferuar në Prishtinë me
+                  lehtësi dhe shpejtësi.
+                </p>
+                <a href="">
+                  Lexo më shumë
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="imagess/s5.png" alt="" />
+              </div>
+              <div class="detail-box">
+                <h4>Apartamente Luksoze</h4>
+                <p>
+                  Zgjidhni një ndër apartamentesh luksoze në zemër të
+                  Prishtinës.
+                </p>
+                <a href="">
+                  Lexo më shumë
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="imagess/s5.png" alt="" />
+              </div>
+              <div class="detail-box">
+                <h4>Apartamente për Familje</h4>
+                <p>
+                  Rezervoni një apartament të përshtatshëm për familje në
+                  lokacione të përshtatshme.
+                </p>
+                <a href="">
+                  Lexo më shumë
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="imagess/s5.png" alt="" />
+              </div>
+              <div class="detail-box">
+                <h4>Rezervim Afatgjatë</h4>
+                <p>
+                  Ofrojmë zgjidhje fleksibile për rezervime afatgjata në
+                  Prishtinë.
+                </p>
+                <a href="">
+                  Lexo më shumë
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="imagess/s5.png" alt="" />
+              </div>
+              <div class="detail-box">
+                <h4>Rezervime Online</h4>
+                <p>
+                  Procesi i thjeshtë dhe i shpejtë për të rezervuar apartamentin
+                  tuaj online.
+                </p>
+                <a href="">
+                  Lexo më shumë
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="box">
+              <div class="img-box">
+                <img src="imagess/s5.png" alt="" />
+              </div>
+              <div class="detail-box">
+                <h4>Mbështetje</h4>
+                <p>Ekipi ynë është i gatshëm t'ju ndihmojë në çdo kohë.</p>
+                <a href="">
+                  Lexo më shumë
+                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end service section -->
+
+    <!-- about section -->
+    <section class="about_section layout_padding-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>Rreth Nesh</h2>
+              </div>
+              <p>
+                Ne ofrojmë shërbime të klasit të parë për të bërë rezervimin
+                tuaj të apartamenteve në Prishtinë sa më të lehtë dhe të sigurt.
+                Me një përvojë të gjatë në menaxhimin e pronave dhe një ekip të
+                përkushtuar, ne jemi këtu për të siguruar që qëndrimi juaj të
+                jetë i paharrueshëm.
+              </p>
+              <a href=""> Lexo më shumë </a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img-box">
+              <img src="imagess/apartment-1.webp" alt="Rreth Nesh" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about section -->
+
+    <!-- booking management section -->
+    <section class="server_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="img-box">
+              <img
+                src="imagess/apartment-3.webp"
+                alt="Menaxhimi i Rezervimeve"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>Menaxho rezervimet tuaja me ne</h2>
+                <p>
+                  Ne e bëjmë procesin e rezervimit të apartamenteve sa më të
+                  thjeshtë dhe të lehtë. Me platformën tonë të menaxhimit, ju
+                  mund të keni kontroll të plotë mbi rezervimet, duke siguruar
+                  një përvojë të qetë dhe të këndshme për të gjithë klientët.
+                </p>
+              </div>
+              <a href=""> Lexo më shumë </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end booking management section -->
+
+    <!-- price section -->
+
+    <section class="price_section layout_padding">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>Çmimet Tona</h2>
+        </div>
+        <div class="price_container">
+          <div class="box">
+            <div class="detail-box">
+              <h2>€ <span>70</span></h2>
+              <h6>Studio</h6>
+              <ul class="price_features">
+                <li>1 Dhomë Gjumi</li>
+                <li>1 Banjo</li>
+                <li>Wi-Fi Falas</li>
+                <li>Kuzhinë e Pajisur</li>
+                <li>Parkim Privat</li>
+                <li>Mbështetje 24/7</li>
+              </ul>
+            </div>
+            <div class="btn-box">
+              <a href=""> Shiko Detajet </a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="detail-box">
+              <h2>€ <span>199</span></h2>
+              <h6>Apartament Standard</h6>
+              <ul class="price_features">
+                <li>2 Dhoma Gjumi</li>
+                <li>1 Banjo</li>
+                <li>Wi-Fi Falas</li>
+                <li>Kuzhinë e Pajisur</li>
+                <li>Parkim Privat</li>
+                <li>Mbështetje 24/7</li>
+              </ul>
+            </div>
+            <div class="btn-box">
+              <a href=""> Shiko Detajet </a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="detail-box">
+              <h2>€ <span>300</span></h2>
+              <h6>Apartament Premium</h6>
+              <ul class="price_features">
+                <li>3 Dhoma Gjumi</li>
+                <li>2 Banjo</li>
+                <li>Wi-Fi Falas</li>
+                <li>Kuzhinë e Pajisur</li>
+                <li>Parkim Privat</li>
+                <li>Mbështetje 24/7</li>
+              </ul>
+            </div>
+            <div class="btn-box">
+              <a href=""> Shiko Detajet </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end price section -->
+
+    <!-- client section -->
+    <section class="client_section">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>Çfarë thonë klientët tanë</h2>
+          <p>
+            Dëshmi nga klientët që kanë qëndruar në apartamentet tona dhe kanë
+            përjetuar shërbimin tonë të shkëlqyer.
+          </p>
+        </div>
+      </div>
+      <div class="container px-0">
+        <div id="customCarousel2" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-10 mx-auto">
+                    <div class="box">
+                      <div class="img-box">
+                        <img src="imagess/client.jpg" alt="Klienti 1" />
+                      </div>
+                      <div class="detail-box">
+                        <div class="client_info">
+                          <div class="client_name">
+                            <h5>Dionis M.</h5>
+                            <h6>Klient</h6>
+                          </div>
+                          <i class="fa fa-quote-left" aria-hidden="true"></i>
+                        </div>
+                        <p>
+                          "Përvoja ime në apartamentin ishte e mrekullueshme. E
+                          gjithë infrastruktura ishte e pastër dhe moderne, dhe
+                          shërbimi ishte i nivelit të lartë. Do të rezervoj
+                          përsëri!"
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-10 mx-auto">
+                    <div class="box">
+                      <div class="img-box">
+                        <img src="imagess/client.jpg" alt="Klienti 2" />
+                      </div>
+                      <div class="detail-box">
+                        <div class="client_info">
+                          <div class="client_name">
+                            <h5>Besnik K.</h5>
+                            <h6>Klient</h6>
+                          </div>
+                          <i class="fa fa-quote-left" aria-hidden="true"></i>
+                        </div>
+                        <p>
+                          "Apartamenti ishte perfekt për pushimet tona familjare
+                          në Prishtinë. Vendndodhja ishte e përkryer dhe
+                          shërbimi ishte mbi pritshmëritë tona."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-10 mx-auto">
+                    <div class="box">
+                      <div class="img-box">
+                        <img src="imagess/client.jpg" alt="Klienti 3" />
+                      </div>
+                      <div class="detail-box">
+                        <div class="client_info">
+                          <div class="client_name">
+                            <h5>Ermal D.</h5>
+                            <h6>Klient</h6>
+                          </div>
+                          <i class="fa fa-quote-left" aria-hidden="true"></i>
+                        </div>
+                        <p>
+                          "Shumë i kënaqur me apartamentin. E gjithë përvoja
+                          ishte e qetë dhe relaksuese. Do të rekomandoja të
+                          gjithëve."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel_btn-box">
+            <a
+              class="carousel-control-prev"
+              href="#customCarousel2"
+              role="button"
+              data-slide="prev"
+            >
+              <i class="fa fa-angle-left" aria-hidden="true"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#customCarousel2"
+              role="button"
+              data-slide="next"
+            >
+              <i class="fa fa-angle-right" aria-hidden="true"></i>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end client section -->
+
+    <!-- info section -->
+    <section class="info_section layout_padding2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="info_contact">
+              <h4>Adresa</h4>
+              <div class="contact_link_box">
+                <a href="#">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span> Rr. Bulevardi Bill Klinton, Prishtinë, Kosovë </span>
+                </a>
+                <a href="tel:+38344123456">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span> Tel: +383 44 123 456 </span>
+                </a>
+                <a href="mailto:info@apartamenteprishtina.com">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span> Email: info@apartamenteprishtina.com </span>
+                </a>
+              </div>
+            </div>
+            <div class="info_social">
+              <a
+                href="https://www.facebook.com/apartamenteprishtina"
+                target="_blank"
+              >
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://twitter.com/apartamenteprishtina"
+                target="_blank"
+              >
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/apartamenteprishtina"
+                target="_blank"
+              >
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/apartamenteprishtina"
+                target="_blank"
+              >
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="info_link_box">
+              <h4>Linke</h4>
+              <div class="info_links">
+                <a href="#home">
+                  <img src="imagess/nav-bullet.png" alt="" />
+                  Ballina
+                </a>
+                <a href="#about">
+                  <img src="imagess/nav-bullet.png" alt="" />
+                  Rreth Nesh
+                </a>
+                <a href="#services">
+                  <img src="imagess/nav-bullet.png" alt="" />
+                  Shërbimet
+                </a>
+                <a href="#pricing">
+                  <img src="imagess/nav-bullet.png" alt="" />
+                  Çmimet
+                </a>
+                <a href="#contact">
+                  <img src="imagess/nav-bullet.png" alt="" />
+                  Kontakti
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="info_detail">
+              <h4>Rreth Nesh</h4>
+              <p>
+                Ne ofrojmë apartamente moderne dhe të rehatshme për qëndrimin
+                tuaj në Prishtinë. Të gjitha apartamentet tona janë të pajisura
+                me të gjitha lehtësirat që ju nevojiten për një qëndrim të
+                këndshëm.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3 mb-0">
+            <h4>Abonohu</h4>
+            <form action="#">
+              <input type="email" placeholder="Shkruani emailin tuaj" />
+              <button type="submit">Abonohu</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end info section -->
+
+    <!-- footer section -->
+    <footer class="footer_section">
+      <div class="container">
+        <p>
+          &copy; <span id="displayYear"></span> Të gjitha të drejtat e
+          rezervuara nga
+          <a href="https://www.apartamenteprishtina.com"
+            >Apartamente Prishtina</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- end footer section -->
+
+    <!-- jQery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+  </body>
+</html>

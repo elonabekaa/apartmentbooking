@@ -1,0 +1,122 @@
+{% extends "layout/appLayout.html" %} {% block title %}Create | Users{% endblock
+%} {% block content %}
+<link rel="stylesheet" href="/css/style1.css" />
+<main>
+  <div class="container-fluid">
+    <h1 class="mt-4"></h1>
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="card shadow-lg border-0 rounded-lg mt-5">
+            <div class="card-header">
+              <h3 class="text-center font-weight-light my-2">Add User</h3>
+            </div>
+        <div class="card-body">
+          <form method="post" action="/users/store">
+            <div class="form-group">
+              <label class="small mb-1">First name :</label>
+              <input
+                class="form-control py-4"
+                name="first_name"
+                type="text"
+                placeholder="Enter first name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="small mb-1">Last name :</label>
+              <input
+                class="form-control py-4"
+                name="last_name"
+                type="text"
+                placeholder="Enter last name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="small mb-1">Country :</label>
+              <input
+                class="form-control py-4"
+                name="country"
+                type="text"
+                placeholder="Enter country"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="small mb-1">City :</label>
+              <input
+                class="form-control py-4"
+                name="city"
+                type="text"
+                placeholder="Enter city"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="small mb-1">Address</label>
+              <input
+                class="form-control py-4"
+                name="address"
+                id="address"
+                type="text"
+                placeholder="Enter address"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="small mb-1">Phone</label>
+              <input
+                class="form-control py-4"
+                name="phone"
+                id="phone"
+                type="text"
+                placeholder="Enter phone"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="small mb-1">Status</label>
+              <input
+                class="form-control py-4"
+                name="status"
+                id="status"
+                type="text"
+                placeholder="Enter status"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="small mb-1">Email</label>
+              <input
+                class="form-control py-4"
+                name="email"
+                id="email"
+                type="email"
+                placeholder="Enter email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="small mb-1">Password</label>
+              <input
+                class="form-control py-4"
+                name="password"
+                id="password"
+                type="password"
+                placeholder="Enter password"
+                required
+              />
+            </div>
+            <input
+              class="btn btn-primary"
+              name="create_user"
+              value="Create"
+              type="submit"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

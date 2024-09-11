@@ -1,0 +1,90 @@
+{% extends "layout/appLayout.html" %} {% block title %}Apartments | Apartment{%
+endblock %} {% block content %}
+<main>
+  <div class="container-fluid">
+    <h1 class="mt-4">Apartments</h1>
+    <ol class="breadcrumb mb-4"></ol>
+    <br />
+
+    <div class="row">
+      <div class="col-12">
+        <div class="table-responsive">
+          <table
+            class="table table-bordered"
+            id="dataTable"
+            width="100%"
+            cellspacing="0"
+          >
+            <thead>
+              <tr>
+                <th>Apartment Name</th>
+                <th>Description</th>
+                <th>Location</th>
+                <th>Price per Night</th>
+                <th>Max Guests</th>
+                <th>Edit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for apartment in apartments %}
+              <tr>
+                <td>{{ apartment.name }}</td>
+                <td>{{ apartment.description }}</td>
+                <td>{{ apartment.location }}</td>
+                <td>{{ apartment.price_per_night }}</td>
+                <td>{{ apartment.max_guests }}</td>
+                <td>
+                  <a href="/apartments/edit?id={{ apartment.id }}">Edit</a>
+                </td>
+                <td>
+                  <button
+                    class="btn btn-danger delete-btn"
+                    data-id="{{ apartment.id }}"
+                  >
+                    Delete
+                  </button>
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  document.querySelectorAll(".delete-btn").forEach((button) => {
+    button.addEventListener("click", function () {
+      const apartmentId = this.getAttribute("data-id");
+
+      Swal.fire({
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, delete it!",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          const form = document.createElement("form");
+          form.method = "POST";
+          form.action = "/apartments/delete";
+
+          const input = document.createElement("input");
+          input.type = "hidden";
+          input.name = "id";
+          input.value = apartmentId;
+
+          form.appendChild(input);
+          document.body.appendChild(form);
+          form.submit();
+        }
+      });
+    });
+  });
+</script>
+{% endblock %}

@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Login Section Styles */
+.login_section {
+  padding: 50px 0;
+  background-color: #ffffff;
+}
+
+.login_section .heading_container h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.form_container {
+  background: #f8f8f8;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form_container input[type="text"],
+.form_container input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form_container .btn_box {
+  text-align: center;
+}
+
+.form_container .btn_box button {
+  background-color: #d60000; /* Red color as preferred */
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form_container .btn_box button:hover {
+  background-color: #a50000; /* Darker red on hover */
+}
+
+.extra_links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.extra_links a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.extra_links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .login_section {
+    padding: 30px 0;
+  }
+
+  .form_container {
+    padding: 20px;
+  }
+
+  .login_section .heading_container h2 {
+    font-size: 28px;
+  }
+}

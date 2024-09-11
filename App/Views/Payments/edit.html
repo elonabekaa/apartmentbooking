@@ -1,0 +1,80 @@
+{% extends "layout/appLayout.html" %}
+{% block title %}Edit | Payment{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="/css/style1.css" />
+<main>
+  <div class="container-fluid">
+    <h1 class="mt-4">Edit Payment</h1>
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="card shadow-lg border-0 rounded-lg mt-5">
+          <div class="card-header">
+            <h3 class="text-center font-weight-light my-2">Edit Payment</h3>
+          </div>
+          <div class="card-body">
+            <form method="post" action="/payments/update">
+              <input type="hidden" name="id" value="{{ payment.id }}" />
+              <div class="form-group">
+                <label class="small mb-1">Booking ID:</label>
+                <input
+                  class="form-control py-4"
+                  name="booking_id"
+                  type="text"
+                  value="{{ payment.booking_id }}"
+                  placeholder="Enter booking ID"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="small mb-1">Amount:</label>
+                <input
+                  class="form-control py-4"
+                  name="amount"
+                  type="number"
+                  step="0.01"
+                  value="{{ payment.amount }}"
+                  placeholder="Enter amount"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="small mb-1">Payment Method:</label>
+                <select
+                  class="form-control py-4"
+                  name="payment_method"
+                  required
+                >
+                  <option value="" disabled>Select payment method</option>
+                  <option value="Credit Card" {% if payment.payment_method == 'Credit Card' %}selected{% endif %}>Credit Card</option>
+                  <option value="PayPal" {% if payment.payment_method == 'PayPal' %}selected{% endif %}>PayPal</option>
+                  <option value="Bank Transfer" {% if payment.payment_method == 'Bank Transfer' %}selected{% endif %}>Bank Transfer</option>
+                  <option value="Cash" {% if payment.payment_method == 'Cash' %}selected{% endif %}>Cash</option>
+                  <!-- Add more options if needed -->
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="small mb-1">Payment Date:</label>
+                <input
+                  class="form-control py-4"
+                  name="payment_date"
+                  type="date"
+                  value="{{ payment.payment_date }}"
+                  placeholder="Enter payment date"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="btn btn-primary btn-block"
+                  type="submit"
+                  value="Update Payment"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}

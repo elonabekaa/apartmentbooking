@@ -1,0 +1,129 @@
+{% extends "layout/appLayout.html" %} {% block title %}Edit | Users{% endblock
+%} {% block content %}
+<link rel="stylesheet" href="/css/style1.css" />
+<main>
+  <div class="container-fluid">
+    <h1 class="mt-4"></h1>
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="card shadow-lg border-0 rounded-lg mt-5">
+          <div class="card-header">
+            <h3 class="text-center font-weight-light my-2">Edit User</h3>
+          </div>
+          <div class="card-body">
+            <form method="post" action="/users/update">
+              <input type="hidden" name="id" value="{{ user.id }}" />
+              <div class="form-group">
+                <label class="small mb-1">First name:</label>
+                <input
+                  class="form-control py-4"
+                  name="first_name"
+                  type="text"
+                  value="{{ user.first_name }}"
+                  placeholder="Enter first name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="small mb-1">Last name:</label>
+                <input
+                  class="form-control py-4"
+                  name="last_name"
+                  type="text"
+                  value="{{ user.last_name }}"
+                  placeholder="Enter last name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="small mb-1">Country:</label>
+                <input
+                  class="form-control py-4"
+                  name="country"
+                  type="text"
+                  value="{{ user.country }}"
+                  placeholder="Enter country"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="small mb-1">City:</label>
+                <input
+                  class="form-control py-4"
+                  name="city"
+                  type="text"
+                  value="{{ user.city }}"
+                  placeholder="Enter city"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="small mb-1" for="address">Address:</label>
+                <input
+                  class="form-control py-4"
+                  name="address"
+                  type="text"
+                  value="{{ user.address }}"
+                  placeholder="Enter address"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="small mb-1" for="phone">Phone:</label>
+                <input
+                  class="form-control py-4"
+                  name="phone"
+                  type="text"
+                  value="{{ user.phone }}"
+                  placeholder="Enter phone"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="small mb-1" for="status">Status:</label>
+                <input
+                  class="form-control py-4"
+                  name="status"
+                  type="text"
+                  value="{{ user.status }}"
+                  placeholder="Enter status"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="small mb-1" for="email">Email:</label>
+                <input
+                  class="form-control py-4"
+                  name="email"
+                  type="email"
+                  value="{{ user.email }}"
+                  placeholder="Enter email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="small mb-1" for="password">Password:</label>
+                <input
+                  class="form-control py-4"
+                  name="password"
+                  type="password"
+                  value="{{ user.password }}"
+                  placeholder="Enter password"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="btn btn-primary btn-block"
+                  type="submit"
+                  value="Edit User"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}
